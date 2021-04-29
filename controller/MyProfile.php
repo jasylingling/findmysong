@@ -16,12 +16,24 @@
     }
 
     /**
-      * @param null|void
+      * @param string
       * @return array
       * @desc Returns an array of posts by calling the ForumModel fetchPosts method
     **/
-    // public function getPosts() :array {
-    //   return $this->forumModel->fetchPosts();
-    // }
+    public function getPosts(string $username) :array {
+      // return $username;
+      return $this->myprofileModel->fetchPosts($username);
+    }
+
+    /**
+      * @param int
+      * @return void
+      * @desc Returns an array of posts by calling the ForumModel fetchPosts method
+    **/
+    public function deletePost(int $id){
+      // return $username;
+      $this->myprofileModel->deletePost($id);
+      header("Location: ./myprofile");
+    }
   }
  ?>

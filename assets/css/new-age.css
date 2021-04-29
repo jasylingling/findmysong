@@ -15,6 +15,8 @@ body {
 
 a {
   color: #fdcc52;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
   transition: all .35s;
 }
 
@@ -56,6 +58,8 @@ section h2 {
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
   transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -145,6 +149,8 @@ header.masthead {
   padding-bottom: 100px;
   color: white;
   background: url("../img/bg-pattern.png"), #7b4397;
+  background: url("../img/bg-pattern.png"), -o-linear-gradient(right, #7b4397, #dc2430);
+  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
 }
 
@@ -175,6 +181,9 @@ header.masthead .device-container .screen img {
   }
   header#masthead-posts {
     height: auto !important;
+  }
+  header#masthead-createpost {
+    min-height: 850px !important;
   }
   header.masthead .header-content {
     margin-bottom: 0;
@@ -265,6 +274,8 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
+  background: -o-linear-gradient(right, #7b4397, #dc2430);
+  background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   background-clip: text;
@@ -335,10 +346,12 @@ section.contact ul.list-social li a {
 }
 
 section.contact ul.list-social li.social-instagram a {
+  background: -o-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
   background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 section.contact ul.list-social li.social-instagram a:hover {
+  background: -o-linear-gradient(45deg, #3b55d3, #4d47be, #6e3197, #a52e72, #c0295b, #dd1b1b);
   background: linear-gradient(45deg, #3b55d3, #4d47be, #6e3197, #a52e72, #c0295b, #dd1b1b);
 }
 
@@ -385,6 +398,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .bg-primary {
   background: #fdcc52;
+  background: -o-linear-gradient(#fdcc52, #fdc539);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdcc52), to(#fdc539));
   background: linear-gradient(#fdcc52, #fdc539);
 }
 
@@ -451,9 +466,37 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .avatar-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
   align-items: center !important;
 }
 
 .avatar-center p {
   margin-bottom: 0 !important;
+}
+
+.post_genre_language p, .post_description p {
+  font-size: 16px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.post_genre_language .fa-language {
+  font-size: x-large !important;
+}
+
+.post_audio {
+  width: 100% !important;
+}
+
+.fa-comment-dots, .fa-ban, .fa-trash-alt, .fa-eye {
+  font-size: small !important;
+}
+
+.posted-comments {
+  background-color: rgba(255, 255, 255, 0.95) !important;
 }

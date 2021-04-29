@@ -51,8 +51,7 @@ $Register = new Register();
           <div class="header-content mx-auto">
             <h1 class="mb-5">Geht dir ein Lied nicht mehr aus dem Kopf, aber weder deine Freunde noch
               Musikerkennung-Tools können dir den Songnamen sagen? Dann zähle auf die Hilfe unserer Musikliebhaber!</h1>
-            <a href="#login" class="btn btn-primary btn-xl js-scroll-trigger mr-2 mb-2">Jetzt
-              anmelden</a>
+            <a href="#login" class="btn btn-primary btn-xl js-scroll-trigger mr-2 mb-2">Jetzt anmelden</a>
             <a href="#about" class="btn btn-outline btn-xl js-scroll-trigger mr-2 mb-2">Mehr erfahren</a>
           </div>
         </div>

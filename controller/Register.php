@@ -18,7 +18,7 @@
     /**
       * @param array
       * @return array|boolean
-      * @desc Verifies, Creates, and returns a user by calling the register method on the RegisterModel
+      * @desc Verifies, creates, and returns a user by calling the register method on the RegisterModel
     **/
     public function register(array $data) {
       $register_username = stripcslashes(strip_tags($data['register_username']));

@@ -14,11 +14,11 @@
 <br>
 Die Zugangsdaten zur SQL-Datenbank befinden sich unter `model/Db.php`. Gegebenenfalls müssen die Angaben wie DB-Passwort angepasst werden:
 
-```
-- "DBSERVER", 'localhost';
-- "DBUSER", 'root';
-- "DBPASSWORT", ''; ===> xampp: {empty} / mamp: root <===
-- "DBNAME", 'findmysong';
+```php
+protected $dbHost = 'localhost'; /** Database Host */
+protected $dbUser = 'root'; /** Database Root */
+protected $dbPass = ''; /** Database Password => xampp: {empty} / mamp: root */
+protected $dbName = 'findmysong'; /** Database Name */
 ```
 
 <br>
@@ -29,3 +29,7 @@ Die Zugangsdaten zur SQL-Datenbank befinden sich unter `model/Db.php`. Gegebenen
 - Passwort: `test123`
 
 <br>
+
+**🤝 ANERKENNUNG**
+
+Das Login und Signup System basiert auf `https://github.com/learningdollars/stephenilori-php-pdo`.
